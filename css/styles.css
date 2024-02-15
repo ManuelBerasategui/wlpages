@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+npm i bootstrap-icons
 
 *{
     font-family: "Cabin", sans-serif;
@@ -6,8 +7,8 @@
 
 header{
     background: #005AA7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hwb(56 89% 0% / 0.5), hwb(208 0% 35% / 0.5)), url(../img/pexels-marina-agrelo-5652294.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right,hsla(208, 100%, 33%, 0.5), hsla(55, 100%, 95%, 0.05) ), url(../img/pexels-marina-agrelo-5652294.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to bottom, hwb(56 89% 0% / 0.7), hwb(208 0% 35% / 0.7)), url(../img/pexels-marina-agrelo-5652294.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom,hsla(208, 100%, 33%, 0.7), hsla(55, 100%, 95%, 0.1) ), url(../img/pexels-marina-agrelo-5652294.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
 }
 
@@ -16,12 +17,12 @@ header{
     color: #fff;
     transition: .2s color ease-in-out;
     font-weight: lighter;
-    transition: .5s font-weight ease-in-out;
+    transition: .2s font-weight ease-in-out;
 }
 
 .page-links:hover{
     font-weight:bolder;
-    transition: .2s font-weight ease-in-out;
+    transition: .05s font-weight ease-in-out;
 }
 
 .contacto-btn{
@@ -36,9 +37,13 @@ header{
 
 .contacto-btn:hover{
     font-weight:bolder;
-    transition: .2s font-weight ease-in-out;
+    transition: .05s font-weight ease-in-out;
 }
 
 hr{
-    
+    max-width: 80%;
+}
+.title{
+    font-size: 76px;
+    text-shadow: 4px 3px rgba(0, 0, 0, 0.25);
 }
