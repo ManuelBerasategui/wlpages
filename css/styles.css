@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    font-family: "Cabin", sans-serif;
+}
+
+header{
+    background: #005AA7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hwb(56 89% 0% / 0.5), hwb(208 0% 35% / 0.5)), url(../img/pexels-marina-agrelo-5652294.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,hsla(208, 100%, 33%, 0.5), hsla(55, 100%, 95%, 0.05) ), url(../img/pexels-marina-agrelo-5652294.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+}
+
+.page-links{
+    font-size: 22px;
+    color: #fff;
+    transition: .2s color ease-in-out;
+    font-weight: lighter;
+    transition: .5s font-weight ease-in-out;
+}
+
+.page-links:hover{
+    font-weight:bolder;
+    transition: .2s font-weight ease-in-out;
+}
+
+.contacto-btn{
+    background-color: #F58F29;
+    transition: .2s background-color ease-in-out;
+    width: 175px;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    transition: .2s font-weight ease-in-out;
+}
+
+.contacto-btn:hover{
+    font-weight:bolder;
+    transition: .2s font-weight ease-in-out;
+}
+
+hr{
+    
+}
