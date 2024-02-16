@@ -7,22 +7,38 @@ npm i bootstrap-icons
 
 header{
     background: #005AA7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, hwb(56 89% 0% / 0.7), hwb(208 0% 35% / 0.7)), url(../img/pexels-marina-agrelo-5652294.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom,hsla(208, 100%, 33%, 0.7), hsla(55, 100%, 95%, 0.1) ), url(../img/pexels-marina-agrelo-5652294.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to top, hwb(56 89% 0% / 0.7), hwb(208 0% 35% / 0.7)), url(../img/pexels-marina-agrelo-5652294.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,hsla(208, 100%, 33%, 0.7), hsla(55, 100%, 95%, 0.582) ), url(../img/pexels-marina-agrelo-5652294.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
+    background-attachment: fixed; /* Ensure background stays fixed */
+
+
 }
+
+.body-header {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 80vh; /* Set minimum height to full viewport height */
+    margin-bottom: 0; /* Remove margin bottom */
+}
+
 
 .page-links{
     font-size: 22px;
     color: #fff;
     transition: .2s color ease-in-out;
-    font-weight: lighter;
-    transition: .2s font-weight ease-in-out;
+    font-weight: 600;
+    transition: .2s color ease-in-out;
 }
 
 .page-links:hover{
-    font-weight:bolder;
-    transition: .05s font-weight ease-in-out;
+    color: #0088ff;
+    transition: .2s color ease-in-out;
 }
 
 .contacto-btn{
@@ -32,18 +48,156 @@ header{
     border: none;
     color: #fff;
     font-size: 22px;
-    transition: .2s font-weight ease-in-out;
+    font-weight: 400;
+    transition: .1s font-weight ease-in-out;
 }
 
 .contacto-btn:hover{
-    font-weight:bolder;
-    transition: .05s font-weight ease-in-out;
+    font-weight:700;
+    transition: .1s font-weight ease-in-out;
 }
 
 hr{
-    max-width: 80%;
+    max-width: 85%;
+    color: #fff;
 }
+
+/* Slider */
+
+.section-container{
+    height: 100%;
+    
+}
+
+.slider-element{
+    height: fit-content;
+}
+
+.arrows{
+    z-index: 100;
+    position: relative;
+    bottom: 150px;
+}
+
+
 .title{
     font-size: 76px;
     text-shadow: 4px 3px rgba(0, 0, 0, 0.25);
+    margin: 0;
 }
+
+.text-sliders{
+    margin: auto;
+    opacity: 0;
+    position:absolute;
+    margin: 0;
+    transition: .2s opacity ease-in-out;
+    align-items: center;
+}
+
+
+.text-slider--show{
+    opacity: 1;
+    transition: .2s opacity ease-in-out;
+}
+
+.leer-mas{
+    position: absolute;
+    bottom: -70px; /* Adjust the distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    width: 10%;
+    text-decoration: none;
+    font-size: 24px;
+    padding-top: 2px;
+    background-color: #4464AD;
+    transition: .2s background-color ease-in-out;
+    height: 43px;
+    z-index: 100;
+}
+
+
+
+/* Desarrollamos */
+
+.desarrollamos{
+    background-color: #536DFE;
+}
+
+.main-title{
+    max-width: 100%;
+    text-shadow: 4px 3px rgba(0, 0, 0, 0.25);
+}
+
+.desarrollamos-pw{
+    font-size: 84px;
+}
+
+.paginas-w{
+    color: #F58F29;
+}
+
+.todo{
+    font-size: 96px;   
+}
+
+.developer-ilustration{
+    width: 40%;
+}
+
+.desarrollamos-p{
+    font-size: 32px;
+    margin-top: 2.5em;
+    font-weight: 500;
+}
+
+/* Servicio */
+
+.servicio{
+    background-color: #536DFE;
+}
+
+.servicio-title{
+    text-shadow: 4px 3px rgba(0, 0, 0, 0.25);
+    font-size: 84px;
+
+}
+
+.card{
+    max-height: 100%;
+    max-width: 30%;
+    border-radius: 50px;
+    transition: .2s transform ease-in-out;
+
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .2s transform ease-in-out;
+}
+
+.cards:hover .card-icons{
+    fill: #fff;
+    transition: .2s color ease-in-out;
+}
+
+.card-title{
+    font-size: 48px;
+    text-shadow: 4px 3px rgba(0, 0, 0, 0.25);
+
+}
+
+.card-p{
+    font-weight: bold;
+    font-size: 20px;
+    max-width: 100%;
+}
+
+.cards-container{
+    gap: 15em;
+    margin-top: 5em;
+}
+
+/* IMPORTANTEEEEEEEEEEEEEEEEEEEEEEEEEEEEE LOS H1 SON DEMASIADOS, HAY QUE CONFIGURAR ESO AL FINAL */
+
