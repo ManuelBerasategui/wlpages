@@ -30,6 +30,10 @@ header{
     margin-bottom: 0; /* Remove margin bottom */
 }
 
+.navbar-brand{
+    width: 25%;
+}
+
 .navbar-ul{
     float: left;
     margin: 0 0 0 150px;
@@ -93,6 +97,7 @@ hr{
     font-size: 76px;
     text-shadow: 4px 3px rgba(0, 0, 0, 0.25);
     margin: 0;
+    width: 75%;
     
 }
 
@@ -340,6 +345,8 @@ hr{
         margin: 0;
         text-align: center; /* Center the navigation items */
         padding-top: 1em;
+        flex-direction: column;
+        gap: 3em;
     }
 
     .contacto-btn {
@@ -351,13 +358,41 @@ hr{
         padding: 10px; /* Reduce padding for better spacing on small screens */
     }
 
+    .navbar-brand{
+        width: 50%;
+    }
+
     .title {
         font-size: 48px; /* Decrease font size for better readability on small screens */
+        width: 100%;
     }
+
 
     .navbar-ul, .page-links, .contacto-btn {
         font-size: 18px; /* Decrease font size for better readability on small screens */
     }
     
     /* Add more specific styles or adjustments as needed for small screens */
+
+    .right-arrow{
+        position: relative;
+        right: -50px;
+    }
+    .left-arrow{
+        position: relative;
+        left: -50px;
+    }
+
+    .title{
+        font-size: 36px;
+        text-align: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .leer-mas{
+        font-size: 18px;
+        width: 20%;
+        height: 35px;
+    }
 }
