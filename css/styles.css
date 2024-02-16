@@ -210,10 +210,6 @@ hr{
 
 }
 
-.cards:hover .card-icons{
-    fill: #fff;
-    transition: .2s color ease-in-out;
-}
 
 .card-title{
     font-size: 48px;
@@ -366,13 +362,17 @@ hr{
         width: 50%;
     }
 
+    .text-slider-container{
+        justify-content: center;
+    }
+
     .title {
         margin-top: 50px;
         font-size: 40px; /* Decrease font size for better readability on small screens */
         width: 100%;
         text-align: center;
         justify-content: center;
-        width: 85%;
+        width: 100%;
     }
 
 
@@ -391,7 +391,7 @@ hr{
 
     .leer-mas{
         font-size: 18px;
-        width: 20%;
+        width: 30%;
         height: 35px;
     }
 
@@ -399,19 +399,20 @@ hr{
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        align-items: center;
     }
 
     .desarrollamos-pw{
         text-align: center;
-        font-size: 24px;
+        font-size: 40px;
     }
 
     .paginas-w{
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .todo{
-        font-size: 74px;
+        font-size: 56px;
     }
 
     .desarrollamos-textos{
@@ -430,21 +431,49 @@ hr{
     }
 
     .servicio-title{
-        font-size: 60px;
+        font-size: 50px;
         width: fit-content;
     }
 
     .cards-container{
         flex-direction: column;
+        gap: 2em;
     }
 
     .card{
-        max-width: 100%;
+        max-width: 90%;
+    }
+
+    .card-p{
+        font-size: 14px;
     }
 
     .card-important{
-        font-size: 44px;
+        font-size: 26px;
         color: #F58F29;
+    }
+
+    .card-icons{
+        width: 45%;
+        height: 50%;
+    }
+
+    .card-title{
+        font-size: 26px;
+    }
+
+    .card-p-imp{
+        font-size: 14px;
+    }
+
+    
+    .ofrecemos-card:hover{
+        box-shadow: none;
+        transition: none;
+    
+    }
+    .desarrollo-card{
+        box-shadow: 10px 10px 10px 10px hsla(208, 100%, 50%, 0.85);
     }
 
     /* Blog */
