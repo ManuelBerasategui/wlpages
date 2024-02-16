@@ -84,6 +84,7 @@ hr{
     font-size: 76px;
     text-shadow: 4px 3px rgba(0, 0, 0, 0.25);
     margin: 0;
+    
 }
 
 .text-sliders{
@@ -168,6 +169,7 @@ hr{
     max-width: 30%;
     border-radius: 50px;
     transition: .2s transform ease-in-out;
+    border: none;
 
 }
 
@@ -200,4 +202,41 @@ hr{
 }
 
 /* IMPORTANTEEEEEEEEEEEEEEEEEEEEEEEEEEEEE LOS H1 SON DEMASIADOS, HAY QUE CONFIGURAR ESO AL FINAL */
+
+/* Blog */
+
+.blog{
+    background: #005AA7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, hwb(56 89% 0% / 0.7), hwb(208 0% 35% / 0.7)), url(../img/pexels-photo-262508\ 1.png);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,hsla(208, 100%, 33%, 0.7), hsla(55, 100%, 95%, 0.582) ), url(../img/pexels-photo-262508\ 1.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed; /* Ensure background stays fixed */
+
+}
+
+.nuestro-blog{
+    padding-bottom: 50px;
+}
+
+.blog-cards-container{
+    justify-content: space-evenly;
+}
+
+.blog-title{
+    font-size: 48px;
+    margin-top: 20px;
+}
+
+.blog-d{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Footer */
+
+.page-footer{
+    background-color: #1e1e1e;
+}
 
