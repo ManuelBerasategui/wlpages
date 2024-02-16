@@ -10,16 +10,33 @@
 </head>
 <body>
     <header>
-        <div class="navbar p-2">
+        <nav class="navbar navbar-expand-lg p-2">
             <div class="container text-light text-decoration-none">
-                <img src="img/Logo.png" alt="Web Link Pages Logo" class="w-25 btn">
-                <a href="#nosotros" class="page-links text-decoration-none">NOSOTROS</a>
-                <a href="#servicio" class="page-links text-decoration-none">SERVICIO</a>
-                <a href="#blog" class="page-links text-decoration-none">BLOG</a>
-                <a href="#contacto" class="text-decoration-none contacto-btn p-2 rounded text-center">CONTACTO</a>
+
+                <img src="img/Logo.png" alt="Web Link Pages Logo" class="w-25 btn navbar-brand">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                        
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto navbar-ul d-flex flex-row">
+                        <li class="nav-item mt-2">
+                            <a href="#nosotros" class="page-links text-decoration-none">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a href="#servicio" class="page-links text-decoration-none">SERVICIO</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a href="#blog" class="page-links text-decoration-none">BLOG</a>
+                        </li>
+                        <li class="nav-item contacto-btn w-100 p-2 rounded">
+                            <a href="#contacto" class="text-decoration-none text-light">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             
-        </div>
+        </nav>
         <hr class="w-100 border border-light border-1 opacity-50 mx-auto">
 
         <section class="body-header p-5 d-flex flex-row">

@@ -9,8 +9,11 @@ header{
     background: #005AA7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, hwb(56 89% 0% / 0.7), hwb(208 0% 35% / 0.7)), url(../img/pexels-marina-agrelo-5652294.jpg);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top,hsla(208, 100%, 33%, 0.7), hsla(55, 100%, 95%, 0.582) ), url(../img/pexels-marina-agrelo-5652294.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: cover;
+    background-size: 100% 100%;
     background-attachment: fixed; /* Ensure background stays fixed */
+    width: 100%;
+
+    overflow: hidden;
 
 
 }
@@ -27,6 +30,12 @@ header{
     margin-bottom: 0; /* Remove margin bottom */
 }
 
+.navbar-ul{
+    float: left;
+    margin: 0 0 0 150px;
+    gap: 6.5em;
+    
+}
 
 .page-links{
     font-size: 22px;
@@ -316,4 +325,24 @@ hr{
     color: #f2f2f2;
     font-size: 38px;
     font-weight: 500;
+}
+
+/* Small Mobiles */
+
+@media (max-width: 390px){
+
+    header{
+        width: 100vh;
+        height: 100vh;
+        background-size: cover;
+    }
+    .navbar-ul{
+        gap: 4em;
+        margin: 0;
+        padding-top: 1em;
+    }
+
+    .contacto-btn{
+        margin-left: 100px;
+    }
 }
