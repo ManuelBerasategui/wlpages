@@ -29,6 +29,20 @@
         }
     })
 
+    setInterval(function(){
+        if(idAct === 1){
+            document.getElementById(idAct).classList.remove('text-slider--show')
+            idAct = 3
+            setTimeout(function(){document.getElementById(idAct).classList.add('text-slider--show')}, 800)
+        }
+        else{
+            document.getElementById(idAct).classList.remove('text-slider--show')
+            idAct -= 1
+            setTimeout(function(){document.getElementById(idAct).classList.add('text-slider--show')}, 800)
+        }
+
+    }, 2500)
+
     
    
 }())

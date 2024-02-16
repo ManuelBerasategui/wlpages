@@ -367,8 +367,11 @@ hr{
     }
 
     .title {
-        font-size: 48px; /* Decrease font size for better readability on small screens */
+        font-size: 40px; /* Decrease font size for better readability on small screens */
         width: 100%;
+        text-align: center;
+        justify-content: center;
+        width: 85%;
     }
 
 
@@ -379,23 +382,10 @@ hr{
     /* Add more specific styles or adjustments as needed for small screens */
 
     .right-arrow{
-        position: relative;
-        right: -60px;
-        width: 25%;
-        top: -90px;
+        display: none;
     }
     .left-arrow{
-        position: relative;
-        left: -60px;
-        width: 25%;
-        top: -90px;
-    }
-
-    .title{
-        font-size: 36px;
-        text-align: center;
-        justify-content: center;
-        width: 85%;
+        display: none;
     }
 
     .leer-mas{
@@ -449,6 +439,11 @@ hr{
 
     .card{
         max-width: 100%;
+    }
+
+    .card-important{
+        font-size: 44px;
+        color: #F58F29;
     }
 
     /* Blog */
