@@ -9,7 +9,7 @@ header{
     background: #005AA7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, hwb(56 89% 0% / 0.7), hwb(208 0% 35% / 0.7)), url(../img/pexels-marina-agrelo-5652294.jpg);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top,hsla(208, 100%, 33%, 0.7), hsla(55, 100%, 95%, 0.582) ), url(../img/pexels-marina-agrelo-5652294.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: 100% 100%;
+    background-size: 100%;
     background-attachment: fixed; /* Ensure background stays fixed */
     width: 100%;
 
@@ -141,6 +141,10 @@ hr{
 
 .desarrollamos{
     background-color: #f2f2f2;
+}
+
+.desarrollamos-container{
+    justify-content: start;
 }
 
 .main-title{
@@ -337,7 +341,7 @@ hr{
 @media (max-width: 767px) {
     header {
         height: auto; /* Set height to auto so it adjusts based on content */
-        background-size: cover; /* Maintain the cover background for small screens */
+        background-size: 100%; /* Maintain the cover background for small screens */
     }
 
     .navbar-ul {
@@ -376,23 +380,57 @@ hr{
 
     .right-arrow{
         position: relative;
-        right: -50px;
+        right: -60px;
+        width: 25%;
+        top: -90px;
     }
     .left-arrow{
         position: relative;
-        left: -50px;
+        left: -60px;
+        width: 25%;
+        top: -90px;
     }
 
     .title{
         font-size: 36px;
         text-align: center;
         justify-content: center;
-        width: 90%;
+        width: 85%;
     }
 
     .leer-mas{
         font-size: 18px;
         width: 20%;
         height: 35px;
+    }
+
+    .desarrollamos-container{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .desarrollamos-pw{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .paginas-w{
+        font-size: 30px;
+    }
+
+    .todo{
+        font-size: 74px;
+    }
+
+    .desarrollamos-textos{
+        text-align: center;
+    }
+
+    .desarrollamos-p{
+        font-size: 20px;
+    }
+    .developer-img{
+        width: 100%;
     }
 }
