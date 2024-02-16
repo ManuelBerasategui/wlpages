@@ -49,12 +49,12 @@ header{
     color: #fff;
     font-size: 22px;
     font-weight: 400;
-    transition: .1s font-weight ease-in-out;
+    transition: .2s transform ease-in-out;
 }
 
 .contacto-btn:hover{
-    font-weight:700;
-    transition: .1s font-weight ease-in-out;
+    transform: scale(1.15);
+    transition: .2s transform ease-in-out;
 }
 
 hr{
@@ -76,7 +76,7 @@ hr{
 .arrows{
     z-index: 100;
     position: relative;
-    bottom: 150px;
+    bottom: 50px;
 }
 
 
@@ -104,9 +104,7 @@ hr{
 
 .leer-mas{
     position: absolute;
-    bottom: -70px; /* Adjust the distance from the bottom */
-    left: 50%;
-    transform: translateX(-50%); /* Center the button horizontally */
+    bottom: -70px;
     width: 10%;
     text-decoration: none;
     font-size: 24px;
@@ -115,6 +113,12 @@ hr{
     transition: .2s background-color ease-in-out;
     height: 43px;
     z-index: 100;
+    transition: .2s transform ease-in-out;
+}
+
+.leer-mas:hover{
+    transform:scale(1.15);
+    transition: .2s transform ease-in-out;
 }
 
 
@@ -122,7 +126,7 @@ hr{
 /* Desarrollamos */
 
 .desarrollamos{
-    background-color: #536DFE;
+    background-color: #f2f2f2;
 }
 
 .main-title{
@@ -142,8 +146,10 @@ hr{
     font-size: 96px;   
 }
 
-.developer-ilustration{
+.developer-img{
     width: 40%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 10px #1e1e1e8e;
 }
 
 .desarrollamos-p{
@@ -155,7 +161,7 @@ hr{
 /* Servicio */
 
 .servicio{
-    background-color: #536DFE;
+    background-color: #f2f2f2;
 }
 
 .servicio-title{
@@ -170,13 +176,21 @@ hr{
     border-radius: 50px;
     transition: .2s transform ease-in-out;
     border: none;
+    
 
 }
 
 .card:hover{
     cursor: pointer;
     transform: scale(1.1);
-    transition: .2s transform ease-in-out;
+    transition: .2s transform ease-in-out, .05s box-shadow ease-in-out;
+    
+}
+
+.ofrecemos-card:hover{
+    box-shadow: 10px 10px 10px 10px hsla(208, 100%, 50%, 0.85);
+    transition: .2s transform ease-in-out, .25s box-shadow ease-in-out;
+
 }
 
 .cards:hover .card-icons{
@@ -197,7 +211,7 @@ hr{
 }
 
 .cards-container{
-    gap: 15em;
+    gap: 3em;
     margin-top: 5em;
 }
 
@@ -222,6 +236,17 @@ hr{
     justify-content: space-evenly;
 }
 
+.blog-cards{
+    box-shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.555);
+    transition: .2s box-shadow ease-in-out, .2s transform ease-in-out;
+}
+
+.blog-cards:hover{
+    box-shadow: 20px 20px 20px hsla(0, 0%, 0%, 0.9);
+    transition: .2s box-shadow ease-in-out, .2s transform ease-in-out;
+
+}
+
 .blog-title{
     font-size: 48px;
     margin-top: 20px;
@@ -240,3 +265,55 @@ hr{
     background-color: #1e1e1e;
 }
 
+.social-media{
+    gap: 3em;
+}
+
+.contacto-f-title{
+    font-size: 40px;
+    text-shadow: 4px 3px rgba(0, 0, 0, 0.25);
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.number{
+    color: #ccc;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* Contacto */
+
+.email{
+    background-color: #373737;
+    border: none;
+}
+
+.email::placeholder{
+    color: #f2f2f2;
+    font-size: 22px;
+    opacity: 78%;
+
+}
+
+.message{
+    background-color: #373737;
+    border: none;
+    resize: none;
+
+}
+
+.message::placeholder{
+    color: #f2f2f2;
+    font-size: 22px;
+    opacity: 78%;
+}
+
+.sub-btn{
+    background-color: #4f4f4f;
+    border: none;
+    margin-top: .5rem;
+    color: #f2f2f2;
+    font-size: 38px;
+    font-weight: 500;
+}
