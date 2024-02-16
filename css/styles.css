@@ -12,7 +12,6 @@ header{
     background-size: 100%;
     background-attachment: fixed; /* Ensure background stays fixed */
     width: 100%;
-
     overflow: hidden;
 
 
@@ -229,6 +228,7 @@ hr{
 }
 
 .cards-container{
+    flex-direction: row;
     gap: 3em;
     margin-top: 5em;
 }
@@ -341,7 +341,7 @@ hr{
 @media (max-width: 767px) {
     header {
         height: auto; /* Set height to auto so it adjusts based on content */
-        background-size: 100%; /* Maintain the cover background for small screens */
+        background-size: cover; /* Maintain the cover background for small screens */
     }
 
     .navbar-ul {
@@ -432,5 +432,22 @@ hr{
     }
     .developer-img{
         width: 100%;
+    }
+
+    .servicio-container{
+        align-items: center;
+    }
+
+    .servicio-title{
+        font-size: 50px;
+        width: fit-content;
+    }
+
+    .cards-container{
+        flex-direction: column;
+    }
+
+    .card{
+        max-width: 100%;
     }
 }
