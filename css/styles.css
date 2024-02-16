@@ -329,20 +329,35 @@ hr{
 
 /* Small Mobiles */
 
-@media (max-width: 390px){
-
-    header{
-        width: 100vh;
-        height: 100vh;
-        background-size: cover;
+@media (max-width: 767px) {
+    header {
+        height: auto; /* Set height to auto so it adjusts based on content */
+        background-size: cover; /* Maintain the cover background for small screens */
     }
-    .navbar-ul{
-        gap: 4em;
+
+    .navbar-ul {
+        float: none; /* Remove float for better responsiveness */
         margin: 0;
+        text-align: center; /* Center the navigation items */
         padding-top: 1em;
     }
 
-    .contacto-btn{
-        margin-left: 100px;
+    .contacto-btn {
+        margin: 1em auto; /* Center the contact button */
+        display: block; /* Make it a block element for centering */
     }
+
+    .body-header {
+        padding: 10px; /* Reduce padding for better spacing on small screens */
+    }
+
+    .title {
+        font-size: 48px; /* Decrease font size for better readability on small screens */
+    }
+
+    .navbar-ul, .page-links, .contacto-btn {
+        font-size: 18px; /* Decrease font size for better readability on small screens */
+    }
+    
+    /* Add more specific styles or adjustments as needed for small screens */
 }
