@@ -30,7 +30,7 @@ header{
 }
 
 .navbar-brand{
-    width: 25%;
+    max-width: 25%;
 }
 
 .navbar-ul{
@@ -282,14 +282,20 @@ hr{
 }
 
 .social-media{
+    flex-direction: column;
     gap: 3em;
 }
 
 .contacto-f-title{
+    margin-inline: auto;
     font-size: 40px;
     text-shadow: 4px 3px rgba(0, 0, 0, 0.25);
     margin-top: 20px;
     margin-bottom: 25px;
+}
+
+.number-container{
+    flex-direction: column;
 }
 
 .number{
@@ -332,6 +338,10 @@ hr{
     color: #f2f2f2;
     font-size: 38px;
     font-weight: 500;
+}
+
+.footer-container{
+    flex-direction: row;
 }
 
 /* Small Mobiles */
@@ -511,4 +521,45 @@ hr{
         font-size: 15px;
         margin: 0;
     }
+
+    /* Footer */
+
+    .navbar-brand-f{
+        width: 100%;
+        
+        
+    }
+
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media{
+        flex-direction: row;
+        gap: 1em;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .social-icons{
+        min-width: 100%;
+    }
+
+    .contacto-f{
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .number-container{
+        flex-direction: column;
+    }
+
+    .number{
+        font-size: 20px;
+        margin: 0;
+    }
+    
+
+    
 }
