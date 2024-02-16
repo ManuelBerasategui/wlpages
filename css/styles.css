@@ -367,6 +367,7 @@ hr{
     }
 
     .title {
+        margin-top: 50px;
         font-size: 40px; /* Decrease font size for better readability on small screens */
         width: 100%;
         text-align: center;
