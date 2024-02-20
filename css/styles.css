@@ -215,7 +215,7 @@ hr{
 
 
 .card{
-    max-width: 85%;
+    max-width: 150%;
     max-height: 100%;
     border-radius: 50px;
     transition: .2s transform ease-in-out;
@@ -245,6 +245,7 @@ hr{
     box-shadow: 10px 10px 25px 1px #000;
     transition: .2s transform ease-in-out, .25s box-shadow ease-in-out, .2s background-color ease-in-out, .2s color ease-in-out;
     background-color: #4464AD;
+    z-index: 1000;
 
 }
 
@@ -266,6 +267,7 @@ hr{
     box-shadow: 5px 5px 25px 1px #000;
     transition: .2s transform ease-in-out, .05s box-shadow ease-in-out, .2s fill ease-in-out, .2s background-color ease-in-out, .2s color ease-in-out;
     background-color: #fff;
+    z-index: 1000;
 
 }
 
@@ -453,7 +455,7 @@ hr{
 }
 
 .precios-card{
-    max-width: 30%;
+    max-width: 100%;
 }
 
 .precios-card:hover{
@@ -557,7 +559,7 @@ hr{
     display: flex;
     max-width: 100%;
     margin-right: 105px;
-    gap: 5em;
+    gap: 2.5em;
 }
 
 
