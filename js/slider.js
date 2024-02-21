@@ -5,26 +5,26 @@
         if(idAct === 1){
             document.getElementById(idAct).classList.remove('text-slider--show')
             idAct = 3
-            setTimeout(function(){document.getElementById(idAct).classList.add('text-slider--show')}, 800)
+            setTimeout(function(){document.getElementById(idAct).classList.add('text-slider--show')}, 1500)
         }
         else{
             document.getElementById(idAct).classList.remove('text-slider--show')
             idAct -= 1
-            setTimeout(function(){document.getElementById(idAct).classList.add('text-slider--show')}, 800)
+            setTimeout(function(){document.getElementById(idAct).classList.add('text-slider--show')}, 1500)
         }
     })
     document.querySelector('.bi-arrow-right-circle').addEventListener('click', ()=>{
         if(idAct === 3){
             document.getElementById(idAct).classList.remove('text-slider--show')
             idAct = 1
-            setTimeout(function(){document.getElementById(idAct).classList.add('text-slider--show')}, 800)
+            setTimeout(function(){document.getElementById(idAct).classList.add('text-slider--show')}, 1500)
 
             
         }
         else{
             document.getElementById(idAct).classList.remove('text-slider--show')
             idAct += 1
-            setTimeout(function(){document.getElementById(idAct).classList.add('text-slider--show')}, 800)
+            setTimeout(function(){document.getElementById(idAct).classList.add('text-slider--show')}, 1500)
 
         }
     })
@@ -33,12 +33,12 @@
         if(idAct === 1){
             document.getElementById(idAct).classList.remove('text-slider--show')
             idAct = 3
-            setTimeout(function(){document.getElementById(idAct).classList.add('text-slider--show')}, 800)
+            setTimeout(function(){document.getElementById(idAct).classList.add('text-slider--show')}, 1500)
         }
         else{
             document.getElementById(idAct).classList.remove('text-slider--show')
             idAct -= 1
-            setTimeout(function(){document.getElementById(idAct).classList.add('text-slider--show')}, 800)
+            setTimeout(function(){document.getElementById(idAct).classList.add('text-slider--show')}, 1500)
         }
 
     }, 2500)
