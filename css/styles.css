@@ -153,6 +153,7 @@ hr{
 /* Desarrollamos */
 
 .desarrollamos{
+    padding: 1%;
     background-color: #f2f2f2;
 }
 
@@ -174,6 +175,10 @@ hr{
     color: #F58F29;
 }
 
+.paginas-w-p{
+    color: #F58F29;
+}
+
 .todo{
     font-size: 96px;   
 }
@@ -184,7 +189,12 @@ hr{
     box-shadow: 0 0 10px 10px #1e1e1e8e;
 }
 
+.diseño-dev-img{
+    display: block;
+}
+
 .desarrollamos-p{
+    display: block;
     font-size: 32px;
     margin-top: 2.5em;
     font-weight: bold;
@@ -192,6 +202,12 @@ hr{
     text-shadow: 1px 2px rgba(0, 0, 0, 0.25);
 
     
+}
+
+.desarrollo-title{
+    font-size: 72px;
+    text-shadow: 4px 3px rgba(0, 0, 0, 0.25);
+    color: #000;
 }
 
 /* Servicio */
@@ -215,7 +231,7 @@ hr{
 
 
 .card{
-    max-width: 150%;
+    width: 100%;
     max-height: 100%;
     border-radius: 50px;
     transition: .2s transform ease-in-out;
@@ -310,10 +326,13 @@ hr{
     max-width: 100%;
 }
 
+.smaller-card-p{
+    display: none;
+}
+
 .cards-container{
     flex-direction: row;
     margin-top: 5em;
-    margin-left: 75px;
     margin-bottom: 50px;
 }
 
@@ -438,6 +457,7 @@ hr{
     font-size: 96px;
     text-shadow: 4px 3px rgba(0, 0, 0, 0.25);
     max-width: 90%;
+    margin-inline: auto;
 }
 
 .diseñamos-title{
@@ -447,12 +467,35 @@ hr{
 
 }
 
+.diseño-proceso-container{
+    max-width: 50%;
+}
+
+.diseño-proceso-textos{
+    display: block;
+    font-size: 32px;
+    margin-top: 2.5em;
+    font-weight: bold;
+    color: #000;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+.sinc-diseño{
+    font-size: 72px;
+    font-weight: 500;
+    color: #F58F29;
+    text-shadow: 4px 3px rgba(0, 0, 0, 0.25);
+}
+
 /* Precios */
 
 .precios-title{
     color: #000;
     font-size: 84px;
 }
+
+
 
 .precios-card{
     max-width: 100%;
@@ -493,15 +536,23 @@ hr{
 }
 
 .precios-p{
+    display: block;
     margin-top: 40px;
     font-size: 16px;
     color: #000;
     font-weight: bold;
 }
 
+.smaller-precios-p{
+    display: none;
+}
+
 .p-com-card{
     transform: scale(1.1);
     background-color: #4464AD;
+    width: 50%;
+    border-radius: 50px;
+
 }
 
 .precios-com-card-title{
@@ -558,8 +609,11 @@ hr{
 .diseño-precios-container{
     display: flex;
     max-width: 100%;
-    margin-right: 105px;
     gap: 2.5em;
+}
+
+.precios-desarrollo{
+    font-size: 48px;
 }
 
 
@@ -570,6 +624,10 @@ hr{
     header {
         height: auto; /* Set height to auto so it adjusts based on content */
         background-size: cover; /* Maintain the cover background for small screens */
+    }
+
+    .navbar-toggler{
+        border: none;
     }
 
     .navbar-ul {
@@ -627,16 +685,35 @@ hr{
         height: 35px;
     }
 
+    .desarrollamos{
+        padding: .1%;
+        padding-top: 30px
+    }
+
     .desarrollamos-container{
         flex-direction: column;
         justify-content: center;
         text-align: center;
         align-items: center;
+        
     }
 
+    .main-title{
+        text-shadow: none;
+        max-width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .developer-img{
+        width: 75%;
+    }
+
+    
+
     .desarrollamos-pw{
-        text-align: center;
         font-size: 40px;
+        margin-inline: auto;
+        
     }
 
     .paginas-w{
@@ -649,16 +726,13 @@ hr{
 
     .desarrollamos-textos{
         text-align: center;
-        max-width: 50%;
+        max-width: 100%;
+        margin-bottom: 50px;
     }
 
     .desarrollamos-p{
-        font-size: 20px;
-        font-weight: bold;
+        display: none;
 
-    }
-    .developer-img{
-        width: 100%;
     }
 
     .servicio{
@@ -681,6 +755,9 @@ hr{
     .cards-container{
         flex-direction: column;
         gap: 2em;
+        margin-top: none;
+        margin-bottom: none;
+        margin-left: none;
     }
 
     .card{
@@ -720,7 +797,7 @@ hr{
     
     }
     .desarrollo-card{
-        background-color: hsla(208, 100%, 50%, 0.2);
+        background-color:4464AD;
     }
 
     .desarrollo-card:hover{
@@ -758,9 +835,7 @@ hr{
     /* Footer */
 
     .navbar-brand-f{
-        width: 100%;
-        
-        
+        width: 100%;   
     }
 
     .footer-container{
@@ -795,6 +870,88 @@ hr{
 
     .bi-whatsapp-link{
         display: none;
+    }
+
+    /* Design Page */
+
+    .diseño-title{
+        font-size: 46px;
+        text-shadow: 1px 2px rgba(0, 0, 0, 0.25);
+        margin-inline: 0;
+        max-width: 100%;
+    }
+
+    .diseño-bheader{
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+
+    .diseñamos-title{
+        font-size: 46px;
+    }
+
+    .sinc-diseño{
+        font-size: 46px;
+    }
+
+    .diseño-dev-img{
+        display: none;
+    }
+
+    .diseño-proceso-textos{
+        font-size: 24px;
+    }
+
+    .diseño-proceso-container{
+        max-width: 90%;
+    }
+
+    .precios-title{
+        font-size: 56px;
+    }
+
+    .precios-card-title{
+        font-size: 40px;
+    }
+
+    .precios-precio{
+        margin-top: 10px;
+    }
+
+    .n-precio{
+        font-size: 38px;
+    }
+
+    .smaller-card-p{
+        display: block;
+    }
+
+    .precios-p{
+        display: none;
+    }
+
+    .smaller-precios-p{
+        font-size: 18px;
+        font-weight: 500;
+        display: block;
+    }
+
+    .p-com-card{
+        width: 90%;
+    }
+
+    .precios-com-card-title{
+        font-size: 40px;
+    }
+
+    /* Development section */
+
+    .desarrollo-title{
+        font-size: 40px;
+    }
+
+    .sinc-desarrollo{
+        font-size: 40px;
     }
     
 
