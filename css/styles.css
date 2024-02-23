@@ -620,12 +620,17 @@ hr{
 /* Graphic slider */
 
 .gallery-container{
-    padding: 5%;
+    padding: 0%;
+    padding-bottom: 1%;
+}
+
+.graphic-cards-p{
+    font-size: 24px;
 }
 
 .slider-img1{
     opacity: 1;
-    width: 75%;
+    width: 80%;
     height: 100%;
 }
 
