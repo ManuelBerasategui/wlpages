@@ -958,7 +958,25 @@ hr{
         font-size: 18px;
         font-weight: 500;
         display: block;
+        color: #000;
     }
+
+    .card:hover .smaller-precios-p{
+        color: #fff;
+        transition: .2s color ease-in-out;
+    }
+
+    .smaller-precios-com-p{
+        color: #fff;
+        transition: .2s color ease-in-out;
+    }
+
+    .p-com-card:hover .smaller-precios-p{
+        color: #000;
+        transition: .2s color ease-in-out;
+    }
+
+    
 
     .p-com-card{
         width: 90%;
