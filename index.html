@@ -123,16 +123,16 @@
     
                     </div>
                     <div class="col-md-4">
-
-                        <a class="text-decoration-none" href="graphic.html">
-                            <div class="card ofrecemos-card mx-auto p-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="#0d6efd" class="bi bi-images mx-auto card-icons card-icons-blue p-2" viewBox="0 0 16 16">
-                                    <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
-                                    <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2M14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1M2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1z"/>
-                                  </svg>
-                                <h2 class="card-title"><span class="card-important">GRAPHIC</span> <br> DESIGN</h2>
-                                <p class="card-p">Creamos <span class="paginas-w card-p-imp">imágenes</span>,<span class="paginas-w card-p-imp">miniaturas</span>, <span class="paginas-w card-p-imp">publicaciones</span> para tus <span class="paginas-w card-p-imp">redes sociales</span>, <span class="paginas-w card-p-imp">historias</span> personalizadas, <span class="paginas-w card-p-imp">flyers</span> y más para tus <span class="paginas-w card-p-imp">Redes Sociales.</span></p>
-                            </div>
+                            <a href="graphic.html" class="text-decoration-none">
+                                <div class="card ofrecemos-card mx-auto p-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="#0d6efd" class="bi bi-images mx-auto card-icons card-icons-blue p-2" viewBox="0 0 16 16">
+                                        <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                        <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2M14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1M2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1z"/>
+                                      </svg>
+                                    <h2 class="card-title"><span class="card-important">GRAPHIC</span> <br> DESIGN</h2>
+                                    <p class="card-p">Creamos <span class="paginas-w card-p-imp">imágenes</span>,<span class="paginas-w card-p-imp">miniaturas</span>, <span class="paginas-w card-p-imp">publicaciones</span> para tus <span class="paginas-w card-p-imp">redes sociales</span>, <span class="paginas-w card-p-imp">historias</span> personalizadas, <span class="paginas-w card-p-imp">flyers</span> y más para tus <span class="paginas-w card-p-imp">Redes Sociales.</span></p>
+                                </div>
+                            </a>
     
                     </div>
                 </div>
@@ -142,79 +142,87 @@
         <section id="blog" class="blog p-5">
             <div class="container text-center">
                 <h2 class="title nuestro-blog text-light mx-auto p-0">NUESTRO BLOG</h2>
-                <div class="blog-cards-container">
-                    
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active w-75">
-                            <div class="card inner-card p-5 d-flex flex-row" alt="First slide">
-                                <div class="col-md-3 d-flex flex-column">
-                                    <img src="img/pexels-photo-267569 8.png" class="w-100">
-                                    <p class="blog-img-p">text about the image with <span class="text-primary">colors that highlight</span> the design</p>
-                                    <button href="#" class="h-100"></button>
-                                </div>
-                                <div class="col-md-9">
-                                    <h4 class="title nuestro-blog mx-auto p-0 blog-title my-0">BLOG TITLE</h4>
-                                    <p class="blog-d w-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis <span class="text-primary">aliquid quasi harum</span> sint aperiam ab. Excepturi consequuntur eveniet dolor aperiam. </p>                                        
-                                </div>
-                            </div>
-                            
-                          </div>
-                          <div class="carousel-item ">
-                            <div class="card inner-card p-5 d-flex flex-row" alt="Second slide">
+
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="inner-card p-5" alt="First slide">
+                            <div class="row">
                                 <div class="col-md-3 d-flex flex-column">
                                     <img src="img/pexels-photo-267569 8.png" class="w-100">
                                     <p class="blog-img-p">text about the image with <span class="text-primary">colors that highlight</span> the design</p>
                                 </div>
                                 <div class="col-md-9">
                                     <h4 class="title nuestro-blog mx-auto p-0 blog-title my-0">BLOG TITLE</h4>
-                                    <p class="blog-d w-75 mx-auto">Lorem ipsum fffffffffffffffffffffff adipisicing elit. Veritatis <span class="text-primary">aliquid quasi harum</span> sint aperiam ab. Excepturi consequuntur eveniet dolor aperiam. </p>        
+                                    <p class="blog-d w-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed, ut numquam architecto delectus praesentium nisi, perferendis eaque eum quasi odio. Quisquam eos vitae vel voluptate corporis similique tempore cum et odio. Repellendus, fugiat velit!</p>                                        
+                                    <a href="#"><button class="blog-read-btn">Leer más</button></a>
                                 </div>
                             </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="card inner-card p-5 d-flex flex-row" alt="Third slide">
-                                <div class="col-md-3 d-flex flex-column">
-                                    <img src="img/pexels-photo-267569 8.png" class="w-100">
-                                    <p class="blog-img-p">text about the image with <span class="text-primary">colors that highlight</span> the design</p>
-                                </div>
-                                <div class="col-md-9">
-                                    <h4 class="title nuestro-blog mx-auto p-0 blog-title my-0">BLOG TITLE</h4>
-                                    <p class="blog-d w-75 mx-auto">. Veritatis <span class="text-primary">aliquid quasi harum</span> sint aperiam ab. Excepturi consequuntur eveniet dolor aperiam. </p>        
-                                </div>
-                            </div>
-                          </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon rounded" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon rounded" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
+                        <div class="card blog-cards mx-auto">
+                            <img src="img/pexels-photo-267569 6.png" alt="First slide" class="w-100 blog-img-mobile">
+                            <h4 class="blog-title-mobile">BLOG TITLE</h4>
+                            <p class="w-75 blog-d mx-auto">Blog description with a few words about the blog's content</p>
+                        </div>
+
+                        
+                  </div>
+                      <div class="carousel-item">
+                        <div class="inner-card p-5" alt="First slide">
+                            <div class="row">
+                                <div class="col-md-3 d-flex flex-column">
+                                    <img src="img/pexels-photo-267569 8.png" class="w-100">
+                                    <p class="blog-img-p">text about the image with <span class="text-primary">colors that highlight</span> the design</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="title nuestro-blog mx-auto p-0 blog-title my-0">BLOG TITLE</h4>
+                                    <p class="blog-d w-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed, ut numquam architecto delectus praesentium nisi, perferendis eaque eum quasi odio. Quisquam eos vitae vel voluptate corporis similique tempore cum et odio. Repellendus, fugiat velit!</p>                                        
+                                    <a href="#"><button class="blog-read-btn">Leer más</button></a>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="card blog-cards mx-auto">
+                            <img src="img/pexels-photo-267569 6.png" alt="First slide" class="w-100 blog-img-mobile">
+                            <h4 class="blog-title-mobile">BLOG TITLE</h4>
+                            <p class="w-75 blog-d mx-auto">Blog description with a few words about the blog's content</p>
+                        </div>
+
                       </div>
-<!--                     <div class="card blog-cards">
-                        <img src="img/pexels-photo-267569 4.png" alt="First slide" class="w-100">
-                        <h4 class="blog-title">BLOG TITLE</h4>
-                        <p class="w-75 blog-d mx-auto">Blog description with a few words about the blog's content</p>
+                      <div class="carousel-item">
+                        <div class="inner-card p-5" alt="First slide">
+                            <div class="row">
+                                <div class="col-md-3 d-flex flex-column">
+                                    <img src="img/pexels-photo-267569 8.png" class="w-100">
+                                    <p class="blog-img-p">text about the image with <span class="text-primary">colors that highlight</span> the design</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="title nuestro-blog mx-auto p-0 blog-title my-0">BLOG TITLE</h4>
+                                    <p class="blog-d w-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed, ut numquam architecto delectus praesentium nisi, perferendis eaque eum quasi odio. Quisquam eos vitae vel voluptate corporis similique tempore cum et odio. Repellendus, fugiat velit!</p>                                        
+                                    <a href="#"><button class="blog-read-btn">Leer más</button></a>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="card blog-cards mx-auto">
+                            <img src="img/pexels-photo-267569 6.png" alt="First slide" class="w-100 blog-img-mobile">
+                            <h4 class="blog-title-mobile">BLOG TITLE</h4>
+                            <p class="w-75 blog-d mx-auto">Blog description with a few words about the blog's content</p>
+                        </div>
+                        
+                      </div>
                     </div>
-                    <div class="card blog-cards">
-                        <img src="img/pexels-photo-267569 4.png" alt="Second slide" class="w-100">
-                        <h4 class="blog-title">BLOG TITLE</h4>
-                        <p class="w-75 blog-d mx-auto">Blog description with a few words about the blog's content</p>
-                    </div>
-                    <div class="card blog-cards">
-                        <img src="img/pexels-photo-267569 4.png" alt="Third slide" class="w-100">
-                        <h4 class="blog-title">BLOG TITLE</h4>
-                        <p class="w-75 blog-d mx-auto">Blog description with a few words about the blog's content</p>
-                    </div>
- -->                </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only"></span>
+                    </a>
+                  </div>
+                <div class="blog-cards-container">
+               </div>
             </div>
         </section>
         
