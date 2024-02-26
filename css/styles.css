@@ -237,6 +237,7 @@ hr{
     border-radius: 50px;
     transition: .2s transform ease-in-out;
     border: none;
+    cursor:auto;
 }
 
 .desarrollo-card{
@@ -251,7 +252,7 @@ hr{
 }
 
 
-.card:hover{
+.ofrecemos-card:hover{
     cursor: pointer;
     transform: scale(1.1);
     transition: .2s transform ease-in-out, .05s box-shadow ease-in-out;
@@ -372,16 +373,43 @@ hr{
 }
 
 .blog-title{
-    font-size: 48px;
+    font-size: 90px;
     margin-top: 20px;
+    text-align: start;
+}
+
+.blog-img-p{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .blog-d{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     margin-top: 20px;
     padding-bottom: 20px;
+    text-align: start;
 }
+
+
+.carousel-item{    
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.carousel-control-prev-icon{
+    background-color: #000;
+    position: relative;
+    right: 10%;
+}
+
+.carousel-control-next-icon{
+    background-color: #000;
+    position: relative;
+    left: 10%;
+}
+
+
 
 /* Footer */
 
