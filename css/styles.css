@@ -13,6 +13,7 @@ header{
     background-attachment: fixed; /* Ensure background stays fixed */
     width: 100%;
     overflow: hidden;
+    box-shadow: 100px 100px 100px 100px #000;
 
 
 }
@@ -27,7 +28,9 @@ header{
     justify-content: space-between;
     min-height: 80vh; /* Set minimum height to full viewport height */
     margin-bottom: 0; /* Remove margin bottom */
+    
 }
+
 
 .navbar-brand{
     max-width: 25%;
@@ -157,15 +160,12 @@ hr{
     background-color: #f2f2f2;
 }
 
-.desarrollamos-container{
-    justify-content: start;
-    padding: 1%;
-}
-
 .main-title{
     color: #000;
-    max-width: 100%;
+    width: 95%;
     text-shadow: 4px 3px rgba(0, 0, 0, 0.25);
+    font-size: 72px;
+    text-align: center;
 }
 
 .desarrollamos-pw{
@@ -196,11 +196,11 @@ hr{
 
 .desarrollamos-p{
     display: block;
-    font-size: 32px;
+    font-size: 22px;
     margin-top: 2.5em;
-    font-weight: bold;
     color: #000;
     text-shadow: 1px 2px rgba(0, 0, 0, 0.25);
+    text-align: start;
 
     
 }
