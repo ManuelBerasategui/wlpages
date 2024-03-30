@@ -57,7 +57,7 @@ header{
 }
 
 .contacto-btn{
-    background-color: #F58F29;
+    background-color: #0088ff;
     transition: .2s background-color ease-in-out;
     width: 175px;
     border: none;
@@ -173,11 +173,11 @@ hr{
 }
 
 .paginas-w{
-    color: #F58F29;
+    color: #0088ff;
 }
 
 .paginas-w-p{
-    color: #F58F29;
+    color: #0088ff;
 }
 
 .todo{
@@ -249,7 +249,19 @@ hr{
 
 .card-important{
     font-size: 48px;
-    color: #F58F29;
+    color: #0088ff;
+}
+
+.card:hover .card-important{
+    color: #48a7fa;
+}
+
+.card-important-mid{
+    color: #48a7fa;
+}
+
+.card:hover .card-important-mid{
+    color: #0088ff;
 }
 
 
@@ -327,6 +339,22 @@ hr{
     font-weight: bold;
     font-size: 20px;
     max-width: 100%;
+}
+
+.card-p-imp{
+    color: #0088ff;
+}
+
+.card:hover .card-p-imp{
+    color: #48a7fa;
+}
+
+.card-p-imp-mid{
+    color: #48a7fa;
+}
+
+.card:hover .card-p-imp-mid{
+    color: #0088ff;
 }
 
 .smaller-card-p{
@@ -538,7 +566,7 @@ hr{
 .sinc-diseño{
     font-size: 72px;
     font-weight: 500;
-    color: #F58F29;
+    color: #0088ff;
     text-shadow: 4px 3px rgba(0, 0, 0, 0.25);
 }
 
@@ -647,7 +675,7 @@ hr{
 
 .precios-contacto{
     color: #fff;
-    background-color: #F58F29;
+    background-color: #0088ff;
 }
 
 .precios-contacto-btn{
